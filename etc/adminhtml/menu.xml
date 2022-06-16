@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="//www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Ced_Adminui::menu" title="Adminui Ui Grid" module="Ced_Adminui" sortOrder="50" dependsOnConfig="ced/general/enable" resource="Ced_Adminui::menu" />
+        <add id="Ced_Adminuis::menu_item" title="Admin Grid" module="Ced_Adminui" sortOrder="20" parent="Ced_Adminui::menu" action="adminui/index/index" resource="Ced_Adminui::menu_item"/>
+               <!-- START: new node -->  
+        <add id="Ced_Adminui::menu_item"
+            title="Ced Items" module="Ced_Adminui"
+            sortOrder="10" parent="Ced_Adminui::menu"
+            action="createadminui/index/index"
+            resource="Ced_Adminui::menu_item"
+            />
+       <!-- END:   new node -->
+    </menu>
+</config>

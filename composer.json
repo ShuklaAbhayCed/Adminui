@@ -1,0 +1,30 @@
+{
+  "name": "ced/adminui",
+  "description": "Magento 2 SEO extension",
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0",
+    "ced/core-m2": "dev-master"
+  },
+  "type": "magento2-module",
+  "version": "1.1.1",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "authors": [
+    {
+      "name": "ced",
+      "email": "hi@ced.com",
+      "homepage": "https://www.ced.com",
+      "role": "Leader"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "ced\\Seo\\": ""
+    }
+  }
+}

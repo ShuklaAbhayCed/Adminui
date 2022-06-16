@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="CedExample2" translate="label" sortOrder="250">
+            <label>Admin Ced</label>
+        </tab>
+        <section id="ced" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>cedcoss-separator</class>
+            <label>Adminui</label>
+            <tab>CedExample2</tab>
+            <resource>Ced_Adminui::menu_config</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+			
+        </section>
+    </system>
+</config>
